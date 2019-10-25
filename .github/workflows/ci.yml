@@ -19,7 +19,7 @@ jobs:
         with:
           dotnet-version: ${{ matrix.dotnet }}
       - name: Build project
-        run: dotnet build 
+        run: cd abc && dotnet build 
       - name: Test project
       #dotnet "test" "c:\dev\ae_git\rosetta-code-csharp\abc\test_abc\test_abc.csproj"
         run: dotnet test abc/test_abc/test_abc.csproj
@@ -51,6 +51,6 @@ jobs:
         with:
           dotnet-version: ${{ matrix.dotnet }}
       - name: Build project
-        run: dotnet build 
+        run: cd abc && dotnet build 
       - name: Test project
         run: dotnet test abc/test_abc/test_abc.csproj
