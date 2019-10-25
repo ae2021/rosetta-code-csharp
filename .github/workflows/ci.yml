@@ -19,10 +19,10 @@ jobs:
         with:
           dotnet-version: ${{ matrix.dotnet }}
       - name: Build project
-        run: cd abc && dotnet build 
+        run: cd ABC_Problem && dotnet build 
       - name: Test project
-      #dotnet "test" "c:\dev\ae_git\rosetta-code-csharp\abc\test_abc\test_abc.csproj"
-        run: dotnet test abc/test_abc/test_abc.csproj
+      #dotnet "test" "c:\dev\ae_git\rosetta-code-csharp\ABC_Problem\test_ABC_Problem\test_ABC_Problem.csproj"
+        run: dotnet test ABC_Problem/test_ABC_Problem/test_ABC_Problem.csproj
         
   # build-osx:
   #   runs-on: macOS-10.14
@@ -51,6 +51,6 @@ jobs:
         with:
           dotnet-version: ${{ matrix.dotnet }}
       - name: Build project
-        run: cd abc && dotnet build 
+        run: cd ABC_Problem & dotnet build 
       - name: Test project
-        run: dotnet test abc/test_abc/test_abc.csproj
+        run: dotnet test ABC_Problem/test_ABC_Problem/test_ABC_Problem.csproj

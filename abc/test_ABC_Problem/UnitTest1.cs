@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Xunit;
 
-namespace test_abc {
+namespace test_ABC_Problem {
 	public class UnitTest1 {
 		[Fact]
 		public void Test1 () {
@@ -39,7 +39,7 @@ namespace test_abc {
 				{ "CONFUSE", true }
 			};
 			foreach (KeyValuePair<string, bool> pair in tests) {
-				Assert.Equal(pair.Value,abc.Program.Can_spell (pair.Key, data.ToList ()) );
+				Assert.Equal (pair.Value, ABC_Problem.Program.Can_spell (pair.Key, data.ToList ()));
 				//Console.WriteLine ("expected {0} for '{1}' but got {2}", pair.Value, pair.Key, !pair.Value);
 			}
 		}

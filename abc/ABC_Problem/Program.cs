@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace abc {
+namespace ABC_Problem {
 	public class Program {
 		public static bool Can_spell (string word, List<string> data) {
 			word = word.ToUpper ();
@@ -49,8 +49,7 @@ namespace abc {
 				"P C",
 				"Z M"
 			};
-			Dictionary<string, bool> tests = new Dictionary<string, bool> { 
-				{ "test2", true },
+			Dictionary<string, bool> tests = new Dictionary<string, bool> { { "test2", true },
 				{ "test", false },
 				{ "A", true },
 				{ "BARK", true },
