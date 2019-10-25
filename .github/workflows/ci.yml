@@ -51,6 +51,6 @@ jobs:
         with:
           dotnet-version: ${{ matrix.dotnet }}
       - name: Build project
-        run: cd ABC_Problem & dotnet build 
+        run: cd ABC_Problem ; dotnet build 
       - name: Test project
         run: dotnet test ABC_Problem/test_ABC_Problem/test_ABC_Problem.csproj
